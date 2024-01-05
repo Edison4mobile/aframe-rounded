@@ -1,0 +1,33 @@
+{
+  "name": "aframe-round",
+  "main": "lib/rounded.js",
+  "webpack": "dist/aframe-rounded-component.min.js",
+  "description": "Rounded primitive/component for AFrame (https://aframe.io).",
+  "version": "1.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "@Edison4mobile:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Edison4mobile/aframe-rounded",
+    "link": "https://www.npmjs.com/package/aframe-rounded"
+  },
+  "scripts": {
+    "start": "budo --live --verbose --port 3000 --open",
+    "dist": "webpack lib/rounded.js dist/aframe-rounded-component.js && webpack -p lib/rounded.js dist/aframe-rounded-component.min.js"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "budo": "^11.8.4",
+    "shelljs": "^0.8.5",
+    "webpack": "^5.89.0",
+    "ghpages": "0.0.10"
+  },
+  "keywords": [
+    "aframe",
+    "aframe-component",
+    "webvr",
+    "vr"
+  ]
+}
